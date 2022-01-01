@@ -4,35 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6F0F0"
     tools:context=".MainActivity">
 
 
     <EditText
         android:id="@+id/editTextTextEmailAddress6"
-        android:layout_width="272dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="220dp"
+        android:layout_width="258dp"
+        android:layout_height="70dp"
         android:ems="10"
         android:freezesText="false"
         android:inputType="textEmailAddress"
-        android:text="Enter  Your Email/Phone no."
+        android:text="Email/Phone no."
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textColor="#938F8F"
         android:textColorHighlight="#FFEB3B"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.233" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="173dp"
         android:layout_height="64dp"
         android:text="Reset Password"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:backgroundTint="#25D8D8"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress6"
+        app:layout_constraintVertical_bias="0.125" />
 
     <Button
         android:id="@+id/button4"
@@ -40,8 +46,12 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="630dp" />
+        app:backgroundTint="#25D8D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.346" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -49,27 +59,45 @@
         android:layout_height="67dp"
         android:background="@color/white"
         android:src="@android:drawable/ic_lock_idle_lock"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="70dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="240dp"
-        android:layout_height="47dp"
-        android:text="Don't have an account?"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="583dp" />
+        android:layout_width="185dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="252dp"
+        android:text="   Don't have an account?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress6" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="274dp"
-        android:layout_height="60dp"
-        android:text="Verify Your Account"
+        android:layout_width="197dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="120dp"
+        android:text="Forgot password?"
         android:textColor="#0C0B0B"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="234dp"
+        android:layout_height="40dp"
+        android:text="We just need your registered email address to send you password reset."
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.213" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
